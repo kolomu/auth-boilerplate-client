@@ -17,7 +17,6 @@ import { AUTH_USER } from './actions/types';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
-
 // Creat store first, then check if token exists, then redirect
 // to appropriate URL {Update APP before it is being rendered!}
 const store = createStoreWithMiddleware(reducers);

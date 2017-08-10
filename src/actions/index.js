@@ -34,7 +34,6 @@ export function signupUser({ email, password }) {
                 history.push('/feature');
             })
             .catch(error => {
-                console.log(error.response);
                 return dispatch(authError(error.response.data.error));
             })
     }

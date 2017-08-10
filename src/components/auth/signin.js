@@ -7,7 +7,6 @@ import Layout from '../layout';
 
 class Signin extends Component {
     handleFormSubmit({ email, password }) {
-        console.log(email, password);
         // need to do something to log user in
         this.props.signinUser({ email, password });
     }

@@ -68,7 +68,6 @@ class Signup extends Component {
 // and field-values
 function validate(values) {
     const errors = {};
-    // console.log(values); // great way to see what we receive
 
     if(!values.email){
         errors.email = 'Please enter an email';
